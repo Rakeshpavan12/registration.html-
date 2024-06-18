@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<style>
+    *{
+        margin:0px;
+        padding:5px;
+        box-sizing: border-box;
+    }
+    body{
+        font-size: 20px;
+        background: fixed;
+    }
+    .cointainer{
+        background-color:rgb(10, 180, 222);
+        width:600px;
+        padding: 20px;
+        margin: 50px auto 0;
+        border-top: 5px solid black;
+        border-left:5px solid black ;
+        border-bottom: 5px solid black;
+        border-right: 5px solid black;
+
+    }
+    .cointainer h2{
+        font-size: 30px;
+        line-height: 10px;
+        padding: 5px;
+        text-align: center;
+    }
+    .input-name{
+        width: 100%;
+        position: relative;
+        margin: 20px auto;
+    }
+    .lock{
+        padding:11px 11px;
+    }
+    .name{
+        width:45%;
+        padding: 8px 0 8px 50px;
+    }
+    .input-name span{
+        margin-left: 10px;
+
+    }
+    .text-name{
+        width: 80%;
+        padding: 10px 0 8px 50px;
+    }
+    .input-name i{
+        position:absolute;
+        font-size: 15px;
+        color: black;
+        border-right: 1px solid #682626;
+    }
+    .Email{
+        text-align:center;
+        padding: 15px 0 15px 50px;
+
+    }
+    .text-name,.name{
+        border: 2px soild #cccccc;
+    }
+    .gender-name{
+        padding: 10px 0 8px 25px;
+        margin: 0%;
+
+    }
+    .gender-name:hover{
+        color: #682626;
+    }
+    .tarikh{
+        padding: 10px 0 8px 50px;
+        width:50%;
+        margin: 2px auto;
+        
+    }
+    .tel-num{
+        width:50%;
+        margin:2px auto;
+        padding: 10px 0 8px 50px;
+    }
+    .country{
+        padding:10px;
+        width:80%;
+        font-size: large;
+        text-align: center;
+        margin:3px;
+        position:relative;
+    }
+    .button{
+        width:80%;
+        font-size: 20px;
+        background-color: blue;
+        color:white;
+        height: 35px;
+        cursor:pointer;
+    }
+    .button:hover{
+        background-color: green;
+    }
+</style>
+<body>
+    <div class="cointainer">
+        <h2>Registration Form</h2>
+        <form>
+            <div class="background-img">
+
+            </div>
+            <div class="input-name">
+                <i class="fa fa-user lock"></i>
+                <input type="text" placeholder="Firstname"class="name">
+                <span>
+                    <i class="fa fa-user  lock"></i>
+                    <input type="text"placeholder="Lastname"class="name">
+                </span>
+                <div class="input-type">
+                    <i class="fa fa-envelope lock" aria-hidden="true"></i>
+                    <input type="email"placeholder="Email"class="text-name">
+
+                </div>
+                <div class="input-name">
+                    <i class="fa fa-lock lock" aria-hidden="true"></i>
+                    <input type="password"placeholder="Password"class="text-name">
+                </div>
+                <div class="input-name">
+                        <i class="fa fa-lock lock" aria-hidden="true"></i>
+                        <input type="password"placeholder="Confirm Password"class="text-name"> 
+                    
+                </div>
+                <div class="gender-name">
+                    <input type="radio"name="gender">
+                    <label>Male</label>
+                    <input type="radio"name="gender">
+                    <label>Female</label>
+                </div>
+                <div class="input-name">
+                    <i class="fa fa-calendar lock" aria-hidden="true"></i>
+                    <input type="date"class="tarikh">
+
+                </div>
+                <div class="input-name">
+                    <i class="fa fa-phone lock" aria-hidden="true"></i>
+                    <input type="tel"placeholder="Mobile-No"class="tel-num">
+                    
+                </div>
+                <div class="input-name">
+                    <select class="country">
+                        <option>select a state</option>
+                        <option>Andhra Pradesh</option>
+                        <option>Tamil Nadu</option>
+                        <option>Karanataka</option>
+                        <option>Maharasthra</option>
+                    </select>
+
+                </div>
+                <div class="input-name">
+                    <input type="submit"class="button" value="Register">
+
+                </div>
+               
+            </div>
+          
+        </form>
+    </div>
+    
+</body>
+</html>
